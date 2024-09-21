@@ -8,7 +8,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import UserAvatar from "../common/UserAvatar";
+import UserAvatar from "@/components/common/UserAvatar";
 import dynamic from "next/dynamic";
 const LogoutModal = dynamic(() => import("../auth/LogoutModal"));
 

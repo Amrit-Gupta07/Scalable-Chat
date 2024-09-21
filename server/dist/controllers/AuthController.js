@@ -23,6 +23,10 @@ class AuthController {
             const token = jwt.sign(JWTPayload, process.env.JWT_SECRET, {
                 expiresIn: "365d",
             });
+            console.log(">>>>>>>>>>>>>>>>>>>>>>TOKEN");
+            console.log(token);
+            console.log(">>>>>>>>>>>>>>>>>>>>>>USER");
+            console.log(findUser);
             return response.json({
                 message: "Logged In Successfully",
                 user: {
